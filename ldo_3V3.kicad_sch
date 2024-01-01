@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (date "2024-01-01")
+    (rev "A")
+    (company "Butler Electronics")
+    (comment 1 "Joshua Butler, MD, MHI")
+  )
+
   (lib_symbols
     (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.254 1.778 0)
