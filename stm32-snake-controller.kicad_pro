@@ -188,6 +188,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.6
         }
       ],
       "zones_allow_external_fillets": false
@@ -200,7 +208,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_to_pin|2540000|952500|26443b8b-b6fe-4e13-90a3-ef41449401ef|9429b58d-b56f-4a5f-b779-917f36ac739f|/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87|/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87|/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/c0109fac-5125-4b12-bf8c-ee038b9dc952"
+    ],
     "meta": {
       "version": 0
     },
@@ -412,7 +422,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "snake_controller",
+      "User Symbols"
+    ]
   },
   "meta": {
     "filename": "stm32-snake-controller.kicad_pro",
@@ -464,7 +477,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB Data",
-        "pcb_color": "rgb(255, 255, 194)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -529,18 +542,7 @@
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
-      "field_names": [
-        {
-          "name": "LCSC",
-          "url": false,
-          "visible": false
-        },
-        {
-          "name": "Mouser",
-          "url": false,
-          "visible": false
-        }
-      ],
+      "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -583,6 +585,10 @@
     [
       "d417c71f-80fc-45f0-947d-2527a8bc1d84",
       "snes_controller"
+    ],
+    [
+      "c0109fac-5125-4b12-bf8c-ee038b9dc952",
+      "USB-A_Connector"
     ]
   ],
   "text_variables": {}
