@@ -708,7 +708,7 @@
   (symbol (lib_id "power:+5V") (at 80.01 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 352a9ac0-75d3-49f1-b4e5-c35394aab9bc)
-    (property "Reference" "#PWR0403" (at 80.01 44.45 0)
+    (property "Reference" "#PWR0402" (at 80.01 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 80.01 35.56 0)
@@ -724,7 +724,7 @@
     (instances
       (project "stm32-snake-controller"
         (path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/d417c71f-80fc-45f0-947d-2527a8bc1d84"
-          (reference "#PWR0403") (unit 1)
+          (reference "#PWR0402") (unit 1)
         )
       )
     )
@@ -795,7 +795,7 @@
   (symbol (lib_id "power:GND") (at 50.8 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c26049ce-9ee8-431a-a20c-0ada5ba7476d)
-    (property "Reference" "#PWR0402" (at 50.8 67.31 0)
+    (property "Reference" "#PWR0403" (at 50.8 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 50.8 66.04 0)
@@ -811,7 +811,7 @@
     (instances
       (project "stm32-snake-controller"
         (path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/d417c71f-80fc-45f0-947d-2527a8bc1d84"
-          (reference "#PWR0402") (unit 1)
+          (reference "#PWR0403") (unit 1)
         )
       )
     )
