@@ -591,7 +591,7 @@
   )
 
   (symbol (lib_id "Connector:USB_A") (at 140.97 67.31 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 0aea263d-0045-4555-874f-246babf778b9)
     (property "Reference" "J102" (at 140.97 55.88 0)
       (effects (font (size 1.27 1.27)))
