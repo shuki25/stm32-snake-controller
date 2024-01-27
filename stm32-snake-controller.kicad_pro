@@ -528,7 +528,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "stm32-snake-controller.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
