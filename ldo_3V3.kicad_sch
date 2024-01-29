@@ -1,509 +1,1245 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 79a908a7-52b5-4c3d-bf57-23be066d948b)
-
-  (paper "A4")
-
-  (title_block
-    (date "2024-01-01")
-    (rev "A")
-    (company "Butler Electronics")
-    (comment 1 "Joshua Butler, MD, MHI")
-  )
-
-  (lib_symbols
-    (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.254 1.778 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C_Small" (at 0.254 -2.032 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "capacitor cap" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Unpolarized capacitor, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_Small_0_1"
-        (polyline
-          (pts
-            (xy -1.524 -0.508)
-            (xy 1.524 -0.508)
-          )
-          (stroke (width 0.3302) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 0.508)
-            (xy 1.524 0.508)
-          )
-          (stroke (width 0.3048) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "C_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 2.032)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 2.032)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Regulator_Linear:XC6220B331MR" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at 0 8.89 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "XC6220B331MR" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://www.torexsemi.com/file/xc6220/XC6220.pdf" (at 19.05 -25.4 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "LDO Voltage Regulator 1A" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "1A, Low Drop-out Voltage Regulator, Fixed Output 3.3V, SOT-23-5" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SOT?23*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "XC6220B331MR_0_1"
-        (rectangle (start -7.62 5.08) (end 7.62 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "XC6220B331MR_1_1"
-        (pin power_in line (at -12.7 2.54 0) (length 5.08)
-          (name "VIN" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -10.16 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -12.7 -2.54 0) (length 5.08)
-          (name "CE" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin no_connect line (at 7.62 -2.54 180) (length 5.08) hide
-          (name "NC" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_out line (at 12.7 2.54 180) (length 5.08)
-          (name "VOUT" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "#FLG" (at 0 1.905 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "PWR_FLAG" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "flag power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PWR_FLAG_0_0"
-        (pin power_out line (at 0 0 90) (length 0)
-          (name "pwr" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "PWR_FLAG_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 1.27)
-            (xy -1.016 1.905)
-            (xy 0 2.54)
-            (xy 1.016 1.905)
-            (xy 0 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-    )
-  )
-
-  (junction (at 43.18 40.64) (diameter 0) (color 0 0 0 0)
-    (uuid 2b606c13-f97c-4293-9c88-925fee775427)
-  )
-  (junction (at 39.37 36.83) (diameter 0) (color 0 0 0 0)
-    (uuid 53d90885-218b-4f3f-8177-4dea9f09eb2d)
-  )
-  (junction (at 55.88 53.34) (diameter 0) (color 0 0 0 0)
-    (uuid 86871cc1-a787-4537-9b81-0a7c7b63c43b)
-  )
-  (junction (at 69.85 40.64) (diameter 0) (color 0 0 0 0)
-    (uuid a9e5eae8-9f3d-4f2f-835c-13d3f4dba4bd)
-  )
-  (junction (at 39.37 40.64) (diameter 0) (color 0 0 0 0)
-    (uuid f18fd579-18f0-438f-9157-cbdbf08b9345)
-  )
-
-  (wire (pts (xy 39.37 40.64) (xy 39.37 44.45))
-    (stroke (width 0) (type default))
-    (uuid 0d548629-4d39-4f66-8365-62dd0b1d6c45)
-  )
-  (wire (pts (xy 36.83 36.83) (xy 39.37 36.83))
-    (stroke (width 0) (type default))
-    (uuid 1aa8bfc4-f2ab-483f-8568-a5f603b5ea07)
-  )
-  (wire (pts (xy 69.85 53.34) (xy 55.88 53.34))
-    (stroke (width 0) (type default))
-    (uuid 2ae67009-130b-4b7d-b806-bf49980e665b)
-  )
-  (wire (pts (xy 69.85 31.75) (xy 69.85 40.64))
-    (stroke (width 0) (type default))
-    (uuid 38253205-6e3d-4714-8cb4-8397436a09a9)
-  )
-  (wire (pts (xy 39.37 36.83) (xy 39.37 40.64))
-    (stroke (width 0) (type default))
-    (uuid 629f04d6-9dfb-4a16-a347-be454fd072bd)
-  )
-  (wire (pts (xy 39.37 49.53) (xy 39.37 53.34))
-    (stroke (width 0) (type default))
-    (uuid 64b93e47-9b98-43aa-83e3-4987928f5938)
-  )
-  (polyline (pts (xy 82.55 67.31) (xy 26.67 67.31))
-    (stroke (width 0) (type dash))
-    (uuid 6d5ea7dc-bf1d-4d7a-976d-7cd1bf8e96b6)
-  )
-  (polyline (pts (xy 26.67 21.59) (xy 82.55 21.59))
-    (stroke (width 0) (type dash))
-    (uuid 83e97fde-aba0-4512-a4f7-1fb10336ced8)
-  )
-
-  (wire (pts (xy 69.85 49.53) (xy 69.85 53.34))
-    (stroke (width 0) (type default))
-    (uuid 8f6aff62-1230-4315-a526-e68e3c2abf8c)
-  )
-  (wire (pts (xy 69.85 40.64) (xy 69.85 44.45))
-    (stroke (width 0) (type default))
-    (uuid 90678c83-4709-4094-892a-8d958b4bd813)
-  )
-  (wire (pts (xy 55.88 57.15) (xy 55.88 53.34))
-    (stroke (width 0) (type default))
-    (uuid 93a3a974-73a6-488e-977b-f07262d91fee)
-  )
-  (wire (pts (xy 39.37 53.34) (xy 55.88 53.34))
-    (stroke (width 0) (type default))
-    (uuid 963de083-7bda-499c-b749-a210140522cf)
-  )
-  (polyline (pts (xy 26.67 21.59) (xy 26.67 67.31))
-    (stroke (width 0) (type dash))
-    (uuid 9bc0b540-a632-4677-ba56-e22215d47ba1)
-  )
-
-  (wire (pts (xy 39.37 40.64) (xy 43.18 40.64))
-    (stroke (width 0) (type default))
-    (uuid ac3c83a8-3c60-419d-913a-daca5eaa9f0f)
-  )
-  (polyline (pts (xy 82.55 21.59) (xy 82.55 67.31))
-    (stroke (width 0) (type dash))
-    (uuid c20a8af0-c103-4f7a-9654-639236242064)
-  )
-
-  (wire (pts (xy 39.37 31.75) (xy 39.37 36.83))
-    (stroke (width 0) (type default))
-    (uuid c7d89cd7-1675-490b-90f6-21392aa15a57)
-  )
-  (wire (pts (xy 68.58 40.64) (xy 69.85 40.64))
-    (stroke (width 0) (type default))
-    (uuid dee70ad8-d08b-4ed7-a903-260a2b921b31)
-  )
-  (wire (pts (xy 43.18 40.64) (xy 43.18 45.72))
-    (stroke (width 0) (type default))
-    (uuid fbfb374a-756c-4473-bed2-57133ed5bf43)
-  )
-
-  (text "Step-down Regulator" (at 80.01 66.04 0)
-    (effects (font (size 1.5 1.5) italic) (justify right bottom))
-    (uuid e8c114d9-9e1a-4686-ae75-91c3f0bde970)
-  )
-
-  (hierarchical_label "5V" (shape input) (at 39.37 31.75 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 02398e4e-2292-44dd-8560-d6899142f99d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 39.4494 27.0388 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (hierarchical_label "3V3" (shape output) (at 69.85 31.75 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid dad6f080-c81d-4062-be42-d2b5aa240574)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 69.7706 25.8293 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 55.88 57.15 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0007bb50-9e1f-4c0a-a397-388e51b88a9c)
-    (property "Reference" "#PWR0301" (at 55.88 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 55.88 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 55.88 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e15844c1-f329-4b38-a85c-de51a0ad228d))
-    (instances
-      (project "wled-esp32-control-board"
-        (path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
-          (reference "#PWR0301") (unit 1)
-        )
-      )
-      (project "iot_playground"
-        (path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
-          (reference "#PWR0401") (unit 1)
-        )
-      )
-      (project "stm32-snake-controller"
-        (path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
-          (reference "#PWR0201") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Regulator_Linear:XC6220B331MR") (at 55.88 43.18 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 48162d27-e9d3-4cfc-b227-2dad5e40a183)
-    (property "Reference" "U301" (at 55.88 33.02 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "XC6220B331MR-G" (at 55.88 35.56 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 55.88 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.torexsemi.com/file/xc6220/XC6220.pdf" (at 74.93 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C86534" (at 55.88 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mouser" "865-XC6220B331MR-G" (at 55.88 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fbc2fd47-c7e7-4a27-94cc-8980f6bb01b5))
-    (pin "2" (uuid 2c52a012-1de0-4075-863a-28cd3bf1c1c6))
-    (pin "3" (uuid 70814b5f-7a77-4958-b23a-7d34b931cd8b))
-    (pin "4" (uuid 6fe8381c-58ef-4985-985f-3ef7f7026b05))
-    (pin "5" (uuid d6ff35c3-75d6-4299-ae4f-d15fde2ef416))
-    (instances
-      (project "wled-esp32-control-board"
-        (path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
-          (reference "U301") (unit 1)
-        )
-      )
-      (project "iot_playground"
-        (path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
-          (reference "U401") (unit 1)
-        )
-      )
-      (project "stm32-snake-controller"
-        (path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
-          (reference "U201") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:PWR_FLAG") (at 36.83 36.83 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 603e3781-2176-423f-9716-e44dadda5b3e)
-    (property "Reference" "#FLG0301" (at 36.83 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (at 36.83 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 36.83 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 36.83 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 92146b70-1789-40ba-b012-47e494a12278))
-    (instances
-      (project "wled-esp32-control-board"
-        (path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
-          (reference "#FLG0301") (unit 1)
-        )
-      )
-      (project "iot_playground"
-        (path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
-          (reference "#FLG0401") (unit 1)
-        )
-      )
-      (project "stm32-snake-controller"
-        (path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
-          (reference "#FLG0201") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 69.85 46.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 79039a04-ceba-449b-b54d-d747ef609453)
-    (property "Reference" "C302" (at 72.39 45.7262 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "4.7uF" (at 72.39 48.2662 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 69.85 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 69.85 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C19666" (at 69.85 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mouser" "581-0603ZD475KAT2A" (at 69.85 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 41b8ee96-4e68-4e91-9cf2-200af8971e87))
-    (pin "2" (uuid 594eb28c-bbf0-467f-b4b1-11932f974f0e))
-    (instances
-      (project "wled-esp32-control-board"
-        (path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
-          (reference "C302") (unit 1)
-        )
-      )
-      (project "iot_playground"
-        (path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
-          (reference "C402") (unit 1)
-        )
-      )
-      (project "stm32-snake-controller"
-        (path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
-          (reference "C202") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 39.37 46.99 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid dbc867ae-9568-4ffd-81fc-ac8dcafd884d)
-    (property "Reference" "C301" (at 36.83 45.7135 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "22uF" (at 36.83 48.2535 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 39.37 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 39.37 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C59461" (at 39.37 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mouser" "581-06036D226MAT2A" (at 39.37 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3611db4a-1885-4515-87a5-c348f53c2f26))
-    (pin "2" (uuid b63656dc-bc32-491d-876d-d5b1650e3f4d))
-    (instances
-      (project "wled-esp32-control-board"
-        (path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
-          (reference "C301") (unit 1)
-        )
-      )
-      (project "iot_playground"
-        (path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
-          (reference "C401") (unit 1)
-        )
-      )
-      (project "stm32-snake-controller"
-        (path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
-          (reference "C201") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "79a908a7-52b5-4c3d-bf57-23be066d948b")
+	(paper "A4")
+	(title_block
+		(date "2024-01-01")
+		(rev "A")
+		(company "Butler Electronics")
+		(comment 1 "Joshua Butler, MD, MHI")
+	)
+	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Regulator_Linear:XC6220B331MR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "XC6220B331MR"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.torexsemi.com/file/xc6220/XC6220.pdf"
+				(at 19.05 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A, Low Drop-out Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LDO Voltage Regulator 1A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XC6220B331MR_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "XC6220B331MR_1_1"
+				(pin power_in line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "CE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 -2.54 180)
+					(length 5.08) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 43.18 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b606c13-f97c-4293-9c88-925fee775427")
+	)
+	(junction
+		(at 39.37 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53d90885-218b-4f3f-8177-4dea9f09eb2d")
+	)
+	(junction
+		(at 55.88 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86871cc1-a787-4537-9b81-0a7c7b63c43b")
+	)
+	(junction
+		(at 69.85 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9e5eae8-9f3d-4f2f-835c-13d3f4dba4bd")
+	)
+	(junction
+		(at 39.37 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f18fd579-18f0-438f-9157-cbdbf08b9345")
+	)
+	(wire
+		(pts
+			(xy 39.37 40.64) (xy 39.37 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d548629-4d39-4f66-8365-62dd0b1d6c45")
+	)
+	(wire
+		(pts
+			(xy 36.83 36.83) (xy 39.37 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa8bfc4-f2ab-483f-8568-a5f603b5ea07")
+	)
+	(wire
+		(pts
+			(xy 69.85 53.34) (xy 55.88 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ae67009-130b-4b7d-b806-bf49980e665b")
+	)
+	(wire
+		(pts
+			(xy 69.85 31.75) (xy 69.85 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38253205-6e3d-4714-8cb4-8397436a09a9")
+	)
+	(wire
+		(pts
+			(xy 39.37 36.83) (xy 39.37 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "629f04d6-9dfb-4a16-a347-be454fd072bd")
+	)
+	(wire
+		(pts
+			(xy 39.37 49.53) (xy 39.37 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64b93e47-9b98-43aa-83e3-4987928f5938")
+	)
+	(polyline
+		(pts
+			(xy 82.55 67.31) (xy 26.67 67.31)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "6d5ea7dc-bf1d-4d7a-976d-7cd1bf8e96b6")
+	)
+	(polyline
+		(pts
+			(xy 26.67 21.59) (xy 82.55 21.59)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "83e97fde-aba0-4512-a4f7-1fb10336ced8")
+	)
+	(wire
+		(pts
+			(xy 69.85 49.53) (xy 69.85 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f6aff62-1230-4315-a526-e68e3c2abf8c")
+	)
+	(wire
+		(pts
+			(xy 69.85 40.64) (xy 69.85 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90678c83-4709-4094-892a-8d958b4bd813")
+	)
+	(wire
+		(pts
+			(xy 55.88 57.15) (xy 55.88 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93a3a974-73a6-488e-977b-f07262d91fee")
+	)
+	(wire
+		(pts
+			(xy 39.37 53.34) (xy 55.88 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "963de083-7bda-499c-b749-a210140522cf")
+	)
+	(polyline
+		(pts
+			(xy 26.67 21.59) (xy 26.67 67.31)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "9bc0b540-a632-4677-ba56-e22215d47ba1")
+	)
+	(wire
+		(pts
+			(xy 39.37 40.64) (xy 43.18 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac3c83a8-3c60-419d-913a-daca5eaa9f0f")
+	)
+	(polyline
+		(pts
+			(xy 82.55 21.59) (xy 82.55 67.31)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "c20a8af0-c103-4f7a-9654-639236242064")
+	)
+	(wire
+		(pts
+			(xy 39.37 31.75) (xy 39.37 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7d89cd7-1675-490b-90f6-21392aa15a57")
+	)
+	(wire
+		(pts
+			(xy 68.58 40.64) (xy 69.85 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dee70ad8-d08b-4ed7-a903-260a2b921b31")
+	)
+	(wire
+		(pts
+			(xy 43.18 40.64) (xy 43.18 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbfb374a-756c-4473-bed2-57133ed5bf43")
+	)
+	(text "Step-down Regulator"
+		(exclude_from_sim no)
+		(at 80.01 66.04 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8c114d9-9e1a-4686-ae75-91c3f0bde970")
+	)
+	(hierarchical_label "5V"
+		(shape input)
+		(at 39.37 31.75 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "02398e4e-2292-44dd-8560-d6899142f99d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 39.4494 27.0388 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "3V3"
+		(shape output)
+		(at 69.85 31.75 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dad6f080-c81d-4062-be42-d2b5aa240574")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.7706 25.8293 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 55.88 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0007bb50-9e1f-4c0a-a397-388e51b88a9c")
+		(property "Reference" "#PWR0301"
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.88 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e15844c1-f329-4b38-a85c-de51a0ad228d")
+		)
+		(instances
+			(project "wled-esp32-control-board"
+				(path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
+					(reference "#PWR0301")
+					(unit 1)
+				)
+			)
+			(project "iot_playground"
+				(path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
+					(reference "#PWR0401")
+					(unit 1)
+				)
+			)
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
+					(reference "#PWR0201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:XC6220B331MR")
+		(at 55.88 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48162d27-e9d3-4cfc-b227-2dad5e40a183")
+		(property "Reference" "U301"
+			(at 55.88 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XC6220B331MR-G"
+			(at 55.88 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.torexsemi.com/file/xc6220/XC6220.pdf"
+			(at 74.93 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C86534"
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "865-XC6220B331MR-G"
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbc2fd47-c7e7-4a27-94cc-8980f6bb01b5")
+		)
+		(pin "2"
+			(uuid "2c52a012-1de0-4075-863a-28cd3bf1c1c6")
+		)
+		(pin "3"
+			(uuid "70814b5f-7a77-4958-b23a-7d34b931cd8b")
+		)
+		(pin "4"
+			(uuid "6fe8381c-58ef-4985-985f-3ef7f7026b05")
+		)
+		(pin "5"
+			(uuid "d6ff35c3-75d6-4299-ae4f-d15fde2ef416")
+		)
+		(instances
+			(project "wled-esp32-control-board"
+				(path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
+					(reference "U301")
+					(unit 1)
+				)
+			)
+			(project "iot_playground"
+				(path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
+					(reference "U401")
+					(unit 1)
+				)
+			)
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
+					(reference "U201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 36.83 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "603e3781-2176-423f-9716-e44dadda5b3e")
+		(property "Reference" "#FLG0301"
+			(at 36.83 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 36.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92146b70-1789-40ba-b012-47e494a12278")
+		)
+		(instances
+			(project "wled-esp32-control-board"
+				(path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
+					(reference "#FLG0301")
+					(unit 1)
+				)
+			)
+			(project "iot_playground"
+				(path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
+					(reference "#FLG0401")
+					(unit 1)
+				)
+			)
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
+					(reference "#FLG0201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 69.85 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79039a04-ceba-449b-b54d-d747ef609453")
+		(property "Reference" "C302"
+			(at 72.39 45.7262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 72.39 48.2662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 69.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 69.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-0603ZD475KAT2A"
+			(at 69.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41b8ee96-4e68-4e91-9cf2-200af8971e87")
+		)
+		(pin "2"
+			(uuid "594eb28c-bbf0-467f-b4b1-11932f974f0e")
+		)
+		(instances
+			(project "wled-esp32-control-board"
+				(path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
+					(reference "C302")
+					(unit 1)
+				)
+			)
+			(project "iot_playground"
+				(path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
+					(reference "C402")
+					(unit 1)
+				)
+			)
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
+					(reference "C202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 46.99 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbc867ae-9568-4ffd-81fc-ac8dcafd884d")
+		(property "Reference" "C301"
+			(at 36.83 45.7135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22uF"
+			(at 36.83 48.2535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C59461"
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "581-06036D226MAT2A"
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3611db4a-1885-4515-87a5-c348f53c2f26")
+		)
+		(pin "2"
+			(uuid "b63656dc-bc32-491d-876d-d5b1650e3f4d")
+		)
+		(instances
+			(project "wled-esp32-control-board"
+				(path "/39949f26-7b4e-4f4c-975a-4ef261468b2a/d1f69b69-3231-4944-97e3-fdd35c90f911"
+					(reference "C301")
+					(unit 1)
+				)
+			)
+			(project "iot_playground"
+				(path "/da21b043-c1be-47f1-86d6-d54e7594fd6d/b21a4c83-8caf-4c90-bfdc-6aae977d35b1"
+					(reference "C401")
+					(unit 1)
+				)
+			)
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/b39372e0-bf42-4070-952a-e20c81b40854"
+					(reference "C201")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
