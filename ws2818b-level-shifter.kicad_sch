@@ -476,9 +476,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -576,8 +576,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -596,9 +596,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -672,8 +672,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1017,7 +1017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 76.2 55.88 0)
 			(effects
 				(font
@@ -1111,7 +1111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 86.36 93.98 0)
 			(effects
 				(font
@@ -1132,7 +1132,7 @@
 			)
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/14bc5d8e-fdf7-4a51-a138-24c07a8ed6f6"
-					(reference "#PWR0305")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -1183,7 +1183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 55.88 45.72 0)
 			(effects
 				(font
@@ -1255,7 +1255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single Buffer Gate Tri-State, Low-Voltage CMOS"
 			(at 60.96 55.88 0)
 			(effects
 				(font
@@ -1371,7 +1371,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 95.25 90.17 0)
 			(effects
 				(font
@@ -1458,7 +1458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 55.88 80.01 0)
 			(effects
 				(font
@@ -1479,7 +1479,7 @@
 			)
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/14bc5d8e-fdf7-4a51-a138-24c07a8ed6f6"
-					(reference "#PWR0304")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -1528,7 +1528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 76.2 90.17 0)
 			(effects
 				(font
@@ -1622,7 +1622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 55.88 100.33 0)
 			(effects
 				(font
@@ -1655,7 +1655,7 @@
 			)
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/14bc5d8e-fdf7-4a51-a138-24c07a8ed6f6"
-					(reference "#PWR0306")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -1708,7 +1708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 95.25 55.88 0)
 			(effects
 				(font
@@ -1796,7 +1796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 86.36 59.69 0)
 			(effects
 				(font
@@ -1817,7 +1817,7 @@
 			)
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/14bc5d8e-fdf7-4a51-a138-24c07a8ed6f6"
-					(reference "#PWR0302")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -1869,7 +1869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 55.88 66.04 0)
 			(effects
 				(font
@@ -1902,7 +1902,7 @@
 			)
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/14bc5d8e-fdf7-4a51-a138-24c07a8ed6f6"
-					(reference "#PWR0303")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -1953,7 +1953,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single Buffer Gate Tri-State, Low-Voltage CMOS"
 			(at 60.96 90.17 0)
 			(effects
 				(font

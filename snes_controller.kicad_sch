@@ -297,9 +297,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -397,8 +397,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -417,9 +417,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -493,8 +493,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1264,7 +1264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 50.8 40.64 0)
 			(effects
 				(font
@@ -1331,7 +1331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 80.01 60.96 0)
 			(effects
 				(font
@@ -1362,7 +1362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4059336d-f896-427a-bcf8-c1f7d00ef8b0")
-		(property "Reference" "#PWR0402"
+		(property "Reference" "#PWR0403"
 			(at 80.01 44.45 0)
 			(effects
 				(font
@@ -1397,7 +1397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 80.01 40.64 0)
 			(effects
 				(font
@@ -1412,7 +1412,7 @@
 		(instances
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/d417c71f-80fc-45f0-947d-2527a8bc1d84"
-					(reference "#PWR0402")
+					(reference "#PWR0403")
 					(unit 1)
 				)
 			)
@@ -1464,7 +1464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 69.85 50.8 0)
 			(effects
 				(font
@@ -1567,7 +1567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 40.64 50.8 0)
 			(effects
 				(font
@@ -1634,7 +1634,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c26049ce-9ee8-431a-a20c-0ada5ba7476d")
-		(property "Reference" "#PWR0403"
+		(property "Reference" "#PWR0402"
 			(at 50.8 67.31 0)
 			(effects
 				(font
@@ -1670,7 +1670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 50.8 60.96 0)
 			(effects
 				(font
@@ -1685,7 +1685,7 @@
 		(instances
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/d417c71f-80fc-45f0-947d-2527a8bc1d84"
-					(reference "#PWR0403")
+					(reference "#PWR0402")
 					(unit 1)
 				)
 			)
