@@ -7,7 +7,7 @@
 	(title_block
 		(title "WS2812B Level Shifter")
 		(date "2024-01-01")
-		(rev "A")
+		(rev "C")
 		(company "Butler Electronics")
 		(comment 1 "Joshua Butler, MD, MHI")
 	)

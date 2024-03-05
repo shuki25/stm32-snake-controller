@@ -185,6 +185,7 @@
       ],
       "track_widths": [
         0.0,
+        0.2,
         0.25,
         0.2672,
         0.5,
@@ -249,6 +250,7 @@
   },
   "erc": {
     "erc_exclusions": [
+      "lib_symbol_issues|1320800|622300|74dcb308-3fdc-4420-8cf1-eed7188835cd|00000000-0000-0000-0000-000000000000|||",
       "pin_to_pin|2603500|952500|26443b8b-b6fe-4e13-90a3-ef41449401ef|50359168-fae8-4e2e-bb70-746478e8987a|/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87|/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87|/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87/c0109fac-5125-4b12-bf8c-ee038b9dc952"
     ],
     "meta": {
@@ -485,6 +487,23 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1217,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "I2C Bus",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
@@ -561,6 +580,14 @@
       {
         "netclass": "USB Data",
         "pattern": "/USB_D_*"
+      },
+      {
+        "netclass": "I2C Bus",
+        "pattern": "*SDA_*"
+      },
+      {
+        "netclass": "I2C Bus",
+        "pattern": "*SCL_*"
       }
     ]
   },
@@ -658,7 +685,7 @@
           "group_by": false,
           "label": "Mouser",
           "name": "Mouser",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -670,6 +697,30 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey_Price",
+          "name": "DigiKey_Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser_Price",
+          "name": "Mouser_Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC_Price",
+          "name": "LCSC_Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFR_PART_NBR",
+          "name": "MFR_PART_NBR",
           "show": false
         }
       ],
@@ -738,6 +789,10 @@
     [
       "c0109fac-5125-4b12-bf8c-ee038b9dc952",
       "USB-A_Connector"
+    ],
+    [
+      "f02db34e-b0f3-4d60-98e3-c79e4b161f56",
+      "scoreboard"
     ]
   ],
   "text_variables": {}
