@@ -18193,7 +18193,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" " C319015"
+		(property "LCSC" "C319015"
 			(at 44.45 26.67 0)
 			(effects
 				(font
