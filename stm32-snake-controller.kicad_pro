@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.153,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.15239999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -63,11 +63,7 @@
           "width": 0.2672
         }
       ],
-      "drc_exclusions": [
-        "clearance|180395000|108483000|e1e33884-2582-4e95-9d06-346ae4c0489f|d79fa3f7-0e58-42cb-9b62-401518691ab6",
-        "clearance|180895000|108483000|d79fa3f7-0e58-42cb-9b62-401518691ab6|f5ffe2a2-c81b-4667-be32-a2798c7252a3",
-        "clearance|181395000|108483000|f5ffe2a2-c81b-4667-be32-a2798c7252a3|fc26bf99-4caa-453c-9661-0e8dcc92d02e"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -498,10 +494,10 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2032,
-        "diff_pair_gap": 0.2032,
+        "clearance": 0.1524,
+        "diff_pair_gap": 0.1524,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.1217,
+        "diff_pair_width": 0.1547,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -515,7 +511,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1524,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -532,10 +528,10 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2032,
-        "diff_pair_gap": 0.2032,
+        "clearance": 0.1524,
+        "diff_pair_gap": 0.1524,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.1554,
+        "diff_pair_width": 0.2129,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
