@@ -7,7 +7,7 @@
 	(title_block
 		(title "STM32 Snake Game Control Board")
 		(date "2024-01-29")
-		(rev "C")
+		(rev "D")
 		(company "Butler Electronics")
 		(comment 1 "Joshua Butler, MD, MHI")
 	)
@@ -6756,7 +6756,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 146.05) (xy 123.19 151.13)
+			(xy 111.76 146.05) (xy 111.76 151.13)
 		)
 		(stroke
 			(width 0)
@@ -6953,6 +6953,16 @@
 			(type default)
 		)
 		(uuid "22aa815a-8a1e-4633-94d4-6f4944f52a0b")
+	)
+	(wire
+		(pts
+			(xy 121.92 146.05) (xy 121.92 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2307c7b6-ce1e-4bea-8e6a-53bae0eb0da4")
 	)
 	(polyline
 		(pts
@@ -7253,6 +7263,16 @@
 			(type default)
 		)
 		(uuid "3d4df8c2-3901-4572-97b0-4ec930cfd826")
+	)
+	(wire
+		(pts
+			(xy 132.08 151.13) (xy 139.7 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e8ab3b5-cdda-4873-9541-2ab1cbd3fe40")
 	)
 	(polyline
 		(pts
@@ -7886,7 +7906,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 146.05) (xy 113.03 151.13)
+			(xy 101.6 146.05) (xy 101.6 151.13)
 		)
 		(stroke
 			(width 0)
@@ -8196,7 +8216,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 151.13) (xy 128.27 151.13)
+			(xy 111.76 151.13) (xy 116.84 151.13)
 		)
 		(stroke
 			(width 0)
@@ -8583,6 +8603,16 @@
 			(type default)
 		)
 		(uuid "ad1fccda-897c-4a01-84de-269ebe0bb0ea")
+	)
+	(wire
+		(pts
+			(xy 132.08 146.05) (xy 132.08 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adeae288-7abd-49f0-b24b-058e395dc3c5")
 	)
 	(wire
 		(pts
@@ -9066,6 +9096,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 151.13) (xy 129.54 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3e06ed1-372b-4162-a3fb-3c508b10038d")
+	)
+	(wire
+		(pts
 			(xy 198.12 73.66) (xy 193.04 73.66)
 		)
 		(stroke
@@ -9146,7 +9186,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 151.13) (xy 118.11 151.13)
+			(xy 101.6 151.13) (xy 106.68 151.13)
 		)
 		(stroke
 			(width 0)
@@ -10723,6 +10763,17 @@
 		)
 		(uuid "c24ded75-953e-484c-bf46-65e5914d9e62")
 	)
+	(label "SB_SDA"
+		(at 129.54 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c385fea8-bf6d-4ac2-8665-7b085174eab1")
+	)
 	(label "MOSI"
 		(at 97.79 59.69 0)
 		(fields_autoplaced yes)
@@ -10733,6 +10784,17 @@
 			(justify left bottom)
 		)
 		(uuid "cfec0a99-e784-4528-aa52-1ce06c2879c4")
+	)
+	(label "SB_SCL"
+		(at 139.7 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d5feee33-f57c-4476-a228-d1ae41769242")
 	)
 	(label "SCL"
 		(at 90.17 81.28 180)
@@ -10768,7 +10830,7 @@
 		(uuid "d7b6207f-977a-42ac-8abe-b3722f5680d9")
 	)
 	(label "SDA"
-		(at 118.11 151.13 180)
+		(at 106.68 151.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10779,7 +10841,7 @@
 		(uuid "d82447fb-37ac-4073-8fce-3c03cf333998")
 	)
 	(label "SCL"
-		(at 128.27 151.13 180)
+		(at 116.84 151.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11375,7 +11437,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 113.03 140.97 0)
+		(at 101.6 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11384,7 +11446,7 @@
 		(fields_autoplaced yes)
 		(uuid "10323da5-16bf-4d39-bcac-f4ecb7cecece")
 		(property "Reference" "#PWR0146"
-			(at 113.03 144.78 0)
+			(at 101.6 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11393,7 +11455,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 113.03 137.16 0)
+			(at 101.6 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11401,7 +11463,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 140.97 0)
+			(at 101.6 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11410,7 +11472,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 140.97 0)
+			(at 101.6 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11419,7 +11481,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 113.03 140.97 0)
+			(at 101.6 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14798,6 +14860,85 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 132.08 143.51 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d8c5c0e-c434-4184-9e82-5d65e767398b")
+		(property "Reference" "R112"
+			(at 129.54 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K5"
+			(at 129.54 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 132.08 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 132.08 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22843"
+			(at 132.08 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9bb1694-516b-4f80-b96a-001075e224ba")
+		)
+		(pin "2"
+			(uuid "be450210-648f-48e3-a690-1b12cc03345e")
+		)
+		(instances
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87"
+					(reference "R112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 208.28 88.9 0)
 		(mirror x)
 		(unit 1)
@@ -15128,7 +15269,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 113.03 143.51 0)
+		(at 101.6 143.51 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15137,7 +15278,7 @@
 		(dnp no)
 		(uuid "93e3790a-f691-4cd2-a068-ed4ff5b8fa9e")
 		(property "Reference" "R109"
-			(at 110.49 142.24 0)
+			(at 99.06 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15146,7 +15287,7 @@
 			)
 		)
 		(property "Value" "1K5"
-			(at 110.49 144.78 0)
+			(at 99.06 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15155,7 +15296,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.03 143.51 0)
+			(at 101.6 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15164,7 +15305,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 143.51 0)
+			(at 101.6 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15173,7 +15314,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 113.03 143.51 0)
+			(at 101.6 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15182,7 +15323,7 @@
 			)
 		)
 		(property "LCSC" "C22843"
-			(at 113.03 143.51 0)
+			(at 101.6 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15788,7 +15929,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 123.19 143.51 0)
+		(at 111.76 143.51 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15797,7 +15938,7 @@
 		(dnp no)
 		(uuid "b3fb4ec4-8667-477c-9e41-268c642aa10f")
 		(property "Reference" "R110"
-			(at 120.65 142.24 0)
+			(at 109.22 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15806,7 +15947,7 @@
 			)
 		)
 		(property "Value" "1K5"
-			(at 120.65 144.78 0)
+			(at 109.22 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15815,7 +15956,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 123.19 143.51 0)
+			(at 111.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15824,7 +15965,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 143.51 0)
+			(at 111.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15833,7 +15974,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 123.19 143.51 0)
+			(at 111.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15842,7 +15983,7 @@
 			)
 		)
 		(property "LCSC" "C22843"
-			(at 123.19 143.51 0)
+			(at 111.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16045,6 +16186,72 @@
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87"
 					(reference "C107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 121.92 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7902b97-5dc1-47da-a26f-be37d74bd20b")
+		(property "Reference" "#PWR0129"
+			(at 121.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 121.92 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 121.92 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8da6c9b8-ed70-4af8-b9fb-3a2400b1d283")
+		)
+		(instances
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87"
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -16853,6 +17060,72 @@
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87"
 					(reference "C106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 132.08 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d702cab1-69b2-4829-85d0-d6f5017fd6e9")
+		(property "Reference" "#PWR0130"
+			(at 132.08 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 132.08 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 132.08 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f92ab4fc-b5f2-4a72-a37c-7d5cb2e9dcda")
+		)
+		(instances
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87"
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -18069,7 +18342,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 123.19 140.97 0)
+		(at 111.76 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18078,7 +18351,7 @@
 		(fields_autoplaced yes)
 		(uuid "f34f41c6-594e-4c2e-88c9-ff1e29531ec6")
 		(property "Reference" "#PWR0148"
-			(at 123.19 144.78 0)
+			(at 111.76 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18087,7 +18360,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 123.19 137.16 0)
+			(at 111.76 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18095,7 +18368,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 140.97 0)
+			(at 111.76 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18104,7 +18377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 140.97 0)
+			(at 111.76 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18113,7 +18386,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 123.19 140.97 0)
+			(at 111.76 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18789,6 +19062,85 @@
 			(project "stm32-snake-controller"
 				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87"
 					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 121.92 143.51 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff7bbdd3-db94-48a0-9be9-e79524dddda2")
+		(property "Reference" "R111"
+			(at 119.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K5"
+			(at 119.38 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 121.92 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 121.92 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22843"
+			(at 121.92 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3144e17e-76ca-4318-9ce5-03bbf9bc7b02")
+		)
+		(pin "2"
+			(uuid "aa46b1b6-9ffe-4f72-a89f-8d017b8c420f")
+		)
+		(instances
+			(project "stm32-snake-controller"
+				(path "/dca7e15e-20a1-43f3-a9cb-86a6d7aa4e87"
+					(reference "R111")
 					(unit 1)
 				)
 			)
