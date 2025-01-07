@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.5
+          "min_clearance": 0.1524
         }
       },
       "diff_pair_dimensions": [
@@ -65,29 +65,8 @@
         }
       ],
       "drc_exclusions": [
-        "lib_footprint_issues|143500000|88338000|477a2d79-03b1-4e37-9fe0-595949e5c96c|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|143500000|98752000|103afd50-c68e-4d19-8228-646ae1da5a73|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|143704800|107754400|05fba773-486d-4ead-9649-e11658e81828|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|144263600|104401600|2f9d96ed-3078-4318-b11e-ea64f91e45a8|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|144272000|82075000|d9a02f06-e831-4cc9-b351-a0f268c56610|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|148332801|72092576|82969923-9cd6-4205-8f7f-042195348494|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|175400000|130323000|824ea500-81af-449b-985f-1b38d153c67b|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|175400000|69641000|d8fefc3c-4307-40d7-bd60-ee468de2da5f|00000000-0000-0000-0000-000000000000",
         "lib_footprint_issues|188595000|113411000|8a41999c-613f-42ad-859b-1c591fa612ef|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|196850000|125857000|ea13c183-b2a7-4329-a410-b49924fbd0f6|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|196850000|74041000|b7e8236c-23c9-4368-a9a8-e40aa55256ac|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|206783000|88519000|f6903a97-c6bc-4d55-859e-61a59a5914c7|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|208915000|72500000|63963d91-c632-43bc-9ac5-83ead78dff8c|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|209296000|129921000|17e86913-367c-43b4-939c-69999b27e7fd|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|219199749|131826000|52f89e8a-2241-4e38-9648-3405215f1ac4|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|222250000|68803000|88181655-dbbf-4c66-9f23-d3cb60756aa1|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|229362000|122047000|844e150d-5504-4ae6-b313-9d8498bd796d|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|232028833|98805884|5bea8208-0583-4191-a4d0-00d262dad13a|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|161603600|100140000|b4f5573c-7c93-474b-8c02-59dbf89858a6|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|163466000|113952000|40459982-1093-4dc7-b5e1-d6a8e6ef9696|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|166164000|83905000|2d0bb9b1-5766-4f32-a3e0-6bf75aa4d6d5|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|230427500|111363000|dec05ad4-cee9-4e9e-a571-3d16d1735e03|00000000-0000-0000-0000-000000000000",
-        "starved_thermal|146941000|119176800|3ea843c2-af3f-4b34-a26e-9ecfb2fa0761|003c728c-7f12-4dc8-b8a0-b849af661118|F.Cu"
+        "starved_thermal|146941000|119176800|3ea843c2-af3f-4b34-a26e-9ecfb2fa0761|95039bcc-9fad-48cb-8fb9-f4aed78f7a53|F.Cu"
       ],
       "meta": {
         "version": 2
@@ -109,6 +88,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -634,6 +614,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
